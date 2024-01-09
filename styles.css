@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #405461;
+    --primary: rgb(33, 19, 36);
+    --gold: rgb(235, 220, 220);
+    --white: white;
+    --secondary: rgb(74, 93, 188);
+    --font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body{
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nav Bar*/
+.navbar{
+    padding: 24px 18px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.logo{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-family: var(--font-family)
+}
+
+.logo span{
+    color: var(--secondary);
+}
+
+.navbar .nav-items a{
+    display: none;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 18px;
+    margin: 12px;
+}
+
+@media screen and (min-width: 767px) {
+    .navbar .nav-items a{
+        display:inline-block;
+    }
+    
+}
+
+/* HERO SECTION*/
+
+.hero-section{
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+    font-size: 4vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section{
+        font-size: 6vw;
+        max-width: 80%;
+        color: var(--white);
+
+    }
+    
+}
+
+.hero-section #explore{
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
