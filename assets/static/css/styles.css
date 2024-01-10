@@ -7,7 +7,7 @@
     --primary: rgb(33, 19, 36);
     --gold: rgb(235, 220, 220);
     --white: white;
-    --secondary: rgb(74, 93, 188);
+    --secondary: rgb(86, 149, 232);
     --font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -23,33 +23,50 @@ body{
 .navbar{
     padding: 24px 18px;
     margin: 0px;
-    display: flex;
-    justify-content: space-between;
     background-color: var(--primary);
     color: var(--white);
+    display: block;
 }
 
-.logo{
+.navbar .logo{
+    font-size: 25px;
     text-transform: capitalize;
-    font-size: 24px;
-    font-family: var(--font-family)
+    font-weight: 700;
 }
-
-.logo span{
+.navbar .logo span{
     color: var(--secondary);
 }
 
-.navbar .nav-items a{
-    display: none;
+.navbar a{
     text-decoration: none;
     color: var(--white);
-    font-size: 18px;
-    margin: 12px;
+    margin-right: 75px;
+}
+.nav-items{
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.navbar #toggle{
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+}
+.navbar #toggle-close{
+    font-size: 30px;
+    display: none;
 }
 
-@media screen and (min-width: 767px) {
-    .navbar .nav-items a{
-        display:inline-block;
+@media screen and (max-width: 768px){
+    .nav-items{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    #toggle{
+        display: none;
     }
     
 }
