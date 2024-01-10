@@ -4,7 +4,7 @@
 
 :root{
     --background: #405461;
-    --primary: rgb(33, 19, 36);
+    --primary: rgba(0,0,0, 0.9);
     --gold: rgb(235, 220, 220);
     --white: white;
     --secondary: rgb(86, 149, 232);
@@ -21,11 +21,23 @@ body{
 
 /* Nav Bar*/
 .navbar{
-    padding: 24px 18px;
-    margin: 0px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     background-color: var(--primary);
-    color: var(--white);
-    display: block;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.nav-items{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .navbar .logo{
@@ -38,35 +50,30 @@ body{
 }
 
 .navbar a{
+    padding: 5px;
+    font-size: 28px;
     text-decoration: none;
     color: var(--white);
-    margin-right: 75px;
+    display: block;
+    transition: 0.5s;
 }
-.nav-items{
-    position: absolute;
-    right: 0;
-    top: 30px;
-}
+
 .navbar #toggle{
     position: absolute;
     right: 0;
     font-size: 24px;
 }
 .navbar #toggle-close{
-    font-size: 30px;
-    display: none;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
 }
 
-@media screen and (max-width: 768px){
-    .nav-items{
-        display: none;
-    }
-    
-}
 
 @media screen and (min-width: 768px) {
-    #toggle{
-        display: none;
+    .navbar{
+        
     }
     
 }
