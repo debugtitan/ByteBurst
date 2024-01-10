@@ -21,39 +21,23 @@ body{
 
 /* Nav Bar*/
 .navbar{
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 18px 22px;
+    height: 100%;
     width: 100%;
-}
-.navbar #toggle-close{
-    display: none;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
     top: 0;
-    color: var(--white);
-    background-color: transparent;
-    border: none;
+    background-color: var(--primary);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
-.navbar #toggle{
-    position: absolute;
-    right: 10px;
-    top: 20px;
-    font-size: 25px;
-    color: var(--white);
-    background-color: transparent;
-    border: none;
-}
-.navbar .nav-items{
-    position: absolute;
-    display: none;
-}
-
-.nav-items a{
-    padding: 15px;
-    color: var(--white);
-    text-decoration: none;
+.nav-items{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .navbar .logo{
@@ -65,21 +49,28 @@ body{
     color: var(--secondary);
 }
 
-@media screen and (min-width: 930px) {
-    .navbar #toggle, .navbar #toggle-close{
-        display: none;
-    }
-
-    .navbar .nav-items{
-        display: block;
-        position: absolute;
-        right: 70px;
-        top: 20px;
-        margin-right: 65px;
-        font-size: 20px;
-    }
-    
+.navbar a{
+    padding: 5px;
+    font-size: 28px;
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    transition: 0.5s;
 }
+
+.navbar #toggle{
+    position: absolute;
+    right: 0;
+    font-size: 24px;
+}
+.navbar #toggle-close{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 40px;
+}
+
+
 
 /* HERO SECTION*/
 
