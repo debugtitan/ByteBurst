@@ -1,7 +1,7 @@
 $(document).ready(() => {
     // NAVBAR
 
-    $("#explore").click(() => {
+    $("#toggle").click(() => {
         if ($(window).width()) {
             $(".navbar").css({
                 "height": "100%",
