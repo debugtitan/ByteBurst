@@ -14,21 +14,22 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <a class="logo">byte<span>Burst</span></a>
-        <button href="" id="toggle-close"><i class="fa fa-close"></i></button>
-        <div class="nav-items">
-            <a href="#home">Home</a>
-            <a href="#read-earn">Read & Earn</a>
-            <a href="#post-earn">Post & Earn</a>
-            <a href="#leaderboards">Leaderboards</a>
-            <a href="#contact-us">Vendors</a>
-            <a href="#faq">FAQ</a>
-        </div>
+    <header class="navbar">
+        <a class="logo">byte<span class="logo-colored">Burst</span></a>
+        <nav class="nav-items">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#read-earn">Read & Earn</a>
+            <a class="nav-link" href="#post-earn">Post & Earn</a>
+            <a class="nav-link" href="#leaderboards">Leaderboards</a>
+            <a class="nav-link" href="#contact-us">Vendors</a>
+            <a class="nav-link" href="#faq">FAQ</a>
 
-        <button id="toggle"><i class="fa fa-bars"></i></button>
-
-    </div>
+        </nav>
+       <span class="btn-toggle">
+            <i class="fa fa-bars btn-open"></i>
+        <i class="fa fa-close btn-close"></i>
+       </span>
+    </header>
     <div class="hero-section">
         <p>
             Empower your News Experience. Read, Post, Earn! Explore a World of Information and Rewards
@@ -37,6 +38,33 @@
     </div>
 
     <script>
+        const navItems = document.querySelector('.nav-items');
+        const navLink = document.querySelectorAll('.nav-link');
+        const toggleMenu = document.querySelector('.btn-toggle');
+        const btnOpen = document.querySelector('.btn-open');
+        const btnClose = document.querySelector('.btn-close');
+        toggleMenu.addEventListener('click', () => {
+            navItems.classList.toggle('active');
+            if (navItems.classList.contains('active')) {
+                btnOpen.style.display = 'none';
+                btnClose.style.display = 'block';
+            } else {
+                btnOpen.style.display = 'block';
+                btnClose.style.display = 'none';
+            }
+        });
+
+        navLink.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                if (navItems.classList.contains('active')) {
+                    navItems.classList.remove('active');
+                    btnOpen.style.display = 'block';
+                    btnClose.style.display = 'none';
+                }
+
+
+            });
+        });
     </script>
 </body>
 
