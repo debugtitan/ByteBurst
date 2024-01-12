@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/static/fontawesome/css/brands.css">
     <link rel="stylesheet" href="assets/static/fontawesome/css/fontawesome.css">
     <link rel="stylesheet" href="assets/static/fontawesome/css/solid.css">
+    <script src="assets/js/home.js"></script>
 </head>
 
 <body>
@@ -23,10 +24,10 @@
             <a class="nav-link" href="#faq">FAQ</a>
 
         </nav>
-       <span class="btn-toggle">
+        <span class="btn-toggle">
             <i class="fa fa-bars btn-open"></i>
-        <i class="fa fa-close btn-close"></i>
-       </span>
+            <i class="fa fa-close btn-close"></i>
+        </span>
     </header>
     <div class="hero-section">
         <p>
@@ -35,35 +36,7 @@
         <button id="explore">Start Earning</button>
     </div>
 
-    <script>
-        const navItems = document.querySelector('.nav-items');
-        const navLink = document.querySelectorAll('.nav-link');
-        const toggleMenu = document.querySelector('.btn-toggle');
-        const btnOpen = document.querySelector('.btn-open');
-        const btnClose = document.querySelector('.btn-close');
-        toggleMenu.addEventListener('click', () => {
-            navItems.classList.toggle('active');
-            if (navItems.classList.contains('active')) {
-                btnOpen.style.display = 'none';
-                btnClose.style.display = 'block';
-            } else {
-                btnOpen.style.display = 'block';
-                btnClose.style.display = 'none';
-            }
-        });
 
-        navLink.forEach((link) => {
-            link.addEventListener('click', (e) => {
-                if (navItems.classList.contains('active')) {
-                    navItems.classList.remove('active');
-                    btnOpen.style.display = 'block';
-                    btnClose.style.display = 'none';
-                }
-
-
-            });
-        });
-    </script>
 </body>
 
 </html>
