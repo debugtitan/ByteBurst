@@ -83,7 +83,7 @@ body{
 }
 
 .button-outline {
-    display: inline-block;
+    display: none;
     padding: 10px 20px;
     text-decoration: none;
     color: #101511;
@@ -93,9 +93,9 @@ body{
     transition: 0.5s;
 }
 
-.button-outline:hover, .button-outline:focus {
+.button-outline:hover {
     background-color: #9cbc64;
-    outline: none;
+    border: none;
 }
 
 strong{
@@ -136,8 +136,18 @@ strong{
     .nav-link:any-link{
         font-size: 3rem;
     }
+
+    .nav-items .button-outline{
+        display: inline-block;
+    }
 }
 
+@media (min-width: 768px) {
+    .nav-items .button-outline{
+        display: inline-block;
+    }
+    
+}
 
 /* HERO SECTION*/
 
