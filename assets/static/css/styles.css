@@ -56,7 +56,7 @@ body{
 .nav-items{
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 9rem;
 }
 
 .nav-link:any-link{
@@ -128,6 +128,7 @@ strong{
         transform: translateX(-100%);
         transition: .3s;
         z-index: 100;
+        gap: 5rem;
     }
 
     .nav-items.active{
