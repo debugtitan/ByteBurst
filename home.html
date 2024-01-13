@@ -20,10 +20,12 @@
             <a class="nav-link" href="#read-earn">Read & Earn</a>
             <a class="nav-link" href="#post-earn">Post & Earn</a>
             <a class="nav-link" href="#leaderboards">Leaderboards</a>
-            <a class="nav-link" href="#contact-us">Vendors</a>
             <a class="nav-link" href="#faq">FAQ</a>
 
         </nav>
+        <a href="#" class="button-outline">
+            <strong>Get Started</strong>
+        </a>
         <span class="btn-toggle">
             <i class="fa fa-bars btn-open"></i>
             <i class="fa fa-close btn-close"></i>
@@ -37,19 +39,34 @@
     </div>
 
     <div class="contact-us">
-        <img src="assets/media/contact-us.avif" alt="">
         <form action="" method="post">
-            <h3>Get in touch</h3>
-            <p>Have aninquiry orsome feedback to us?<br>Fill out the form belowtocontact our team</p>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <label for="inquiry">Message</label>
-            <input type="text" placeholder="enter your message" id="inquiry">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <span>I agree to the <a href="">Privacy Policy</a> and give my permission to process my personal data for the purposespecified in <a href="">Privacy Policy.</a></span>
-            <input type="submit" value="Submit">
+            <div class="heading">
+                <h3>Get in touch</h3>
+                <span>Have an inquiry or some feedback to us?<br>Fill out the form below to contact our team</p>
+
+            </div>
+            <div class="input-form">
+                <input type="text" placeholder="enter your name" id="name" name="name" required>
+            </div>
+            <div class="input-form">
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </div>
+            <div class="input-form">
+                <input type="text" id="subject" placeholder="Subject..." maxlength="32">
+            </div>
+            <div class="input-form">
+                <input type="text" id="message" placeholder="your inquiry....." name="message">
+            </div>
+            <div class="input-form">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <span>I agree to the <a href="">Privacy Policy</a> and give my permission to process my personal data
+                    for the purposespecified in <a href="">Privacy Policy.</a></span>
+
+            </div>
+            <div class="input-form">
+                <input type="submit" value="Submit">
+            </div>
+
         </form>
     </div>
 
