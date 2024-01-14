@@ -203,7 +203,7 @@ strong{
 }
 
 .about-heading{
-    padding: 6em;
+    padding: 3em;
 }
 
 .about-heading-title {
@@ -215,14 +215,14 @@ strong{
 }
 
 .info-text{
-    font-size: 15px;
+    font-size: 13px;
     color: #111B1F;
 }
 .about-section .text-heading{
     word-wrap: break-word;
     font-weight: 500;
     color: #111B1F;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .about-section img {
