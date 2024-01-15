@@ -254,7 +254,7 @@ strong {
 
 .heading-hero {
     max-width: 960px;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 103%;
     color: var(--heading);
 }
@@ -267,7 +267,7 @@ strong {
 
 @media screen and (max-width: 991px) {
     .heading-hero {
-        font-size: 54px;
+        font-size: 34px;
     }
 }
 
