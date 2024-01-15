@@ -27,7 +27,7 @@ body{
     font-family: var(--font-family);
 }
 
-p{
+p,h1,h4{
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -39,6 +39,10 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--gold);
     color: var(--primary);
 }
@@ -167,13 +171,17 @@ strong{
 }
 
 .hero-heading{
-    margin-top: 3rem;
+    margin-top: 2em;
 }
 
 @media only screen and (max-width: 768px) {
     .hero-section{
         font-size: 6vw;
         max-width: 80%;
+    }
+
+    .hero-heading{
+        margin-top: 3em;
     }
     
 }
@@ -191,68 +199,6 @@ strong{
 
 /** About Section*/
 
-.about-section{
-    margin-top: 15px;
-    position: relative;
-    background-color: var(--white);
-}
-
-
-.about-widget{
-    display: flex;
-}
-
-.about-heading{
-    padding: 3em;
-}
-
-.about-heading-title {
-    padding: 0;
-    margin: 0;
-    line-height: 1;
-    font-size: 17px;
-    color: #8592A0;
-}
-
-.info-text{
-    font-size: 13px;
-    color: #111B1F;
-}
-.about-section .text-heading{
-    word-wrap: break-word;
-    font-weight: 500;
-    color: #111B1F;
-    font-size: 1rem;
-}
-
-.about-section img {
-    height: auto;
-    max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none
-}
-
-@media (max-width: 1024px) {
-    .about-section .about-container {
-        flex-wrap:wrap
-    }
-}
-
-
-@media (max-width: 1024px) {
-    .about-section .about-container {
-        flex-wrap:wrap
-    }
-  
-}
-
-@media (max-width:768px) {
-    .about-widget{
-        display: block;
-    }
-    
-}
 
 
 /* CONTACT FORM*/
