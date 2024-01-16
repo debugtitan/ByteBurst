@@ -261,15 +261,10 @@ strong {
 
 @media screen and (max-width: 767px) {
     .heading-hero {
-        font-size: 45px;
+        font-size: 25px;
     }
 }
 
-@media screen and (max-width: 991px) {
-    .heading-hero {
-        font-size: 34px;
-    }
-}
 
 .pg-large {
     max-width: 620px;
